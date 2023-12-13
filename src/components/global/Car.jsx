@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 function Car({ decade, name, img, desc, top, hp, acc }) {
    return (
-      <section className={`bg-[${img}] w-screen h-screen bg-center bg-cover bg-no-repeat`}>
+      <section className='w-screen h-screen bg-center bg-cover bg-no-repeat bg-fixed' style={{backgroundImage: img}}>
       </section>
    )
 }
