@@ -4,6 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+   --scrollbar-color: red;
+}
+
+::-webkit-scrollbar {
+   width: 12px;
+}
+
+::-webkit-scrollbar-track {
+   background: rgb(45, 45, 45);
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--scrollbar-color);
+   border-radius: 5px;
+}
+
 body {
-    overflow-x: hidden;
+   overflow-x: hidden;
 }

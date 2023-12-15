@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-function Brand({ id, color, logo, path }) {
+function BrandItem({ id, color, logo, path }) {
    return (
       <Link
          to={path}
@@ -18,11 +18,11 @@ function Brand({ id, color, logo, path }) {
    )
 }
 
-Brand.propTypes = {
+BrandItem.propTypes = {
    id: PropTypes.number,
    color: PropTypes.string,
    logo: PropTypes.string,
    path: PropTypes.string,
 }
 
-export default Brand
+export default BrandItem
