@@ -2,8 +2,9 @@ import { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Car from '../components/brandPage/Car.jsx'
 
-function BrandPage({ cars }) {
+function BrandPage({ cars, color }) {
    useEffect(() => {
+      document.querySelector(':root').style.setProperty('--scrollbar-color', color)
       //ändra tab titel, tab ikon och CSS scrollbar variabel
    })
 
@@ -27,6 +28,7 @@ function BrandPage({ cars }) {
 
 BrandPage.propTypes = {
    cars: PropTypes.array,
+   color: PropTypes.string,
 }
 
 export default BrandPage

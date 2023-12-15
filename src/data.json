@@ -2,6 +2,7 @@
    {
       "id": 1,
       "name": "Ferrari",
+      "color": "#EF1A2D",
       "cars": [
          {
             "id": 1,
@@ -78,6 +79,7 @@
    {
       "id": 2,
       "name": "Porsche",
+      "color": "#E0DBD1",
       "cars": [
          {
             "id": 1,
@@ -154,6 +156,7 @@
    {
       "id": 3,
       "name": "Lamborghini",
+      "color": "#040404",
       "cars": [
          {
             "id": 1,
@@ -230,6 +233,7 @@
    {
       "id": 4,
       "name": "Volvo",
+      "color": "#182871",
       "cars": [
          {
             "id": 1,
@@ -306,6 +310,7 @@
    {
       "id": 5,
       "name": "McLaren",
+      "color": "#FF8700",
       "cars": [
          {
             "id": 1,
@@ -382,6 +387,7 @@
    {
       "id": 6,
       "name": "Renault",
+      "color": "#FFC128",
       "cars": [
          {
             "id": 1,

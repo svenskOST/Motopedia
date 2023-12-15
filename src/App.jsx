@@ -8,7 +8,7 @@ function App() {
    return (
       <>
          <Routes>
-            <Route path='/' element={<Home />}></Route>
+            <Route path='/' element={<Home data={data} />}></Route>
             {data.map((page) => (
                <Route
                   key={page.id}

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import BrandItem from '../components/home/BrandItem.jsx'
 import Ferrari from '../assets/ferrari/logo.png'
 import Porsche from '../assets/porsche/logo.png'
@@ -6,66 +7,34 @@ import Volvo from '../assets/volvo/logo.png'
 import McLaren from '../assets/mclaren/logo.png'
 import Renault from '../assets/renault/logo.png'
 
-const brandItems = [
-   {
-      id: 1,
-      name: 'Ferrari',
-      color: '#EF1A2D',
-      logo: Ferrari,
-      path: '/Ferrari',
-   },
-   {
-      id: 2,
-      name: 'Porsche',
-      color: '#E0DBD1',
-      logo: Porsche,
-      path: '/Porsche',
-   },
-   {
-      id: 3,
-      name: 'Lamborghini',
-      color: '#040404',
-      logo: Lamborghini,
-      path: 'Lamborghini',
-   },
-   {
-      id: 4,
-      name: 'Volvo',
-      color: '#182871',
-      logo: Volvo,
-      path: 'Volvo',
-   },
-   {
-      id: 5,
-      name: 'McLaren',
-      color: '#FF8700',
-      logo: McLaren,
-      path: 'McLaren',
-   },
-   {
-      id: 6,
-      name: 'Renault',
-      color: '#FFC128',
-      logo: Renault,
-      path: 'Renault',
-   },
-]
+const logoMap = {
+   Ferrari: Ferrari,
+   Porsche: Porsche,
+   Lamborghini: Lamborghini,
+   Volvo: Volvo,
+   McLaren: McLaren,
+   Renault: Renault,
+}
 
-function Home() {
+function Home({ data }) {
    return (
       <div className='absolute flex min-h-screen w-screen flex-col flex-wrap sm:flex-row'>
-         {brandItems.map((item) => (
+         {data.map((item) => (
             <BrandItem
                key={item.id}
                id={item.id}
                name={item.name}
                color={item.color}
-               logo={item.logo}
-               path={item.path}
+               logo={logoMap[item.name]}
+               path={'/' + item.name}
             />
          ))}
       </div>
    )
+}
+
+Home.propTypes = {
+   data: PropTypes.arrayOf(Object),
 }
 
 export default Home
