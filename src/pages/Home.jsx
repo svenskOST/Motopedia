@@ -16,7 +16,7 @@ function Home({ data, logoMap }) {
    })
 
    return (
-      <div className='absolute flex min-h-screen w-screen flex-col flex-wrap sm:flex-row'>
+      <div className='absolute flex min-h-screen w-screen flex-row flex-wrap'>
          {data.map((item) => (
             <BrandItem
                key={item.id}

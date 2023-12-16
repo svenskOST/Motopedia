@@ -22,7 +22,7 @@ function BrandPage({ name, cars, color }) {
                key={car.id}
                decade={car.decade}
                name={car.name}
-               img={car.img}
+               brand={name}
                desc={car.desc}
                top={car.top}
                hp={car.hp}

@@ -5,7 +5,7 @@ function BrandItem({ id, color, logo, path }) {
    return (
       <Link
          to={path}
-         className='group flex aspect-square w-screen items-center justify-center sm:h-1/2 sm:w-1/2 brightness-50 saturate-75 hover:filter-none transition-[filter] duration-300'
+         className='saturate-75 group flex aspect-square w-1/2 items-center justify-center brightness-50 transition-[filter] duration-300 hover:filter-none sm:w-1/3'
          style={{ backgroundColor: color }}
       >
          <img
