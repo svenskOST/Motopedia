@@ -1,22 +1,20 @@
+import { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import BrandItem from '../components/home/BrandItem.jsx'
-import Ferrari from '../assets/ferrari/logo.png'
-import Porsche from '../assets/porsche/logo.png'
-import Lamborghini from '../assets/lamborghini/logo.png'
-import Volvo from '../assets/volvo/logo.png'
-import McLaren from '../assets/mclaren/logo.png'
-import Renault from '../assets/renault/logo.png'
 
-const logoMap = {
-   Ferrari: Ferrari,
-   Porsche: Porsche,
-   Lamborghini: Lamborghini,
-   Volvo: Volvo,
-   McLaren: McLaren,
-   Renault: Renault,
-}
+function Home({ data, logoMap }) {
+   useEffect(() => {
+      var root = document.querySelector(':root')
+      root.style.setProperty('--scrollbar-color', 'rgb(175, 175, 175)')
+      document.title = 'Motopedia - Home'
+      var icon = document.querySelector('link[rel="icon"]')
+      var newIcon = document.createElement('link')
+      newIcon.rel = 'icon'
+      newIcon.href = './src/assets/favicon.ico'
+      document.head.removeChild(icon)
+      document.head.appendChild(newIcon)
+   })
 
-function Home({ data }) {
    return (
       <div className='absolute flex min-h-screen w-screen flex-col flex-wrap sm:flex-row'>
          {data.map((item) => (
@@ -35,6 +33,7 @@ function Home({ data }) {
 
 Home.propTypes = {
    data: PropTypes.arrayOf(Object),
+   logoMap: PropTypes.object,
 }
 
 export default Home
