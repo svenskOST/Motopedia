@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Car from '../components/brandPage/Car.jsx'
 
-function BrandPage({ name, cars, color }) {
+function BrandPage({ name, color, cars, assets }) {
    useEffect(() => {
       var root = document.querySelector(':root')
       root.style.setProperty('--scrollbar-color', color)
@@ -10,7 +10,7 @@ function BrandPage({ name, cars, color }) {
       var icon = document.querySelector('link[rel="icon"]')
       var newIcon = document.createElement('link')
       newIcon.rel = 'icon'
-      newIcon.href = './src/assets/' + name.toLowerCase() + '/favicon.ico'
+      newIcon.href = assets.favicon.default
       document.head.removeChild(icon)
       document.head.appendChild(newIcon)
    })
@@ -20,9 +20,10 @@ function BrandPage({ name, cars, color }) {
          {cars.map((car) => (
             <Car
                key={car.id}
+               img={assets.images[car.id - 1]}
+               sound={assets.sounds[car.id - 1]}
                decade={car.decade}
                name={car.name}
-               brand={name}
                desc={car.desc}
                top={car.top}
                hp={car.hp}
@@ -35,8 +36,9 @@ function BrandPage({ name, cars, color }) {
 
 BrandPage.propTypes = {
    name: PropTypes.string,
-   cars: PropTypes.arrayOf(Object),
    color: PropTypes.string,
+   cars: PropTypes.arrayOf(Object),
+   assets: PropTypes.object,
 }
 
 export default BrandPage

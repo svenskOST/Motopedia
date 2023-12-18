@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import BrandItem from '../components/home/BrandItem.jsx'
 
-function Home({ data, logoMap }) {
+function Home({ data }) {
    useEffect(() => {
       var root = document.querySelector(':root')
       root.style.setProperty('--scrollbar-color', 'rgb(175, 175, 175)')
@@ -23,7 +23,7 @@ function Home({ data, logoMap }) {
                id={item.id}
                name={item.name}
                color={item.color}
-               logo={logoMap[item.name]}
+               logo={item.assets.logo}
                path={'/' + item.name}
             />
          ))}
@@ -33,7 +33,6 @@ function Home({ data, logoMap }) {
 
 Home.propTypes = {
    data: PropTypes.arrayOf(Object),
-   logoMap: PropTypes.object,
 }
 
 export default Home

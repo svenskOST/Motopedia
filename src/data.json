@@ -6,7 +6,7 @@
       "cars": [
          {
             "id": 1,
-            "decade": "1950s",
+            "decade": 1950,
             "name": "250 Testa Rossa",
             "desc": "Lorem ipsum",
             "top": 350,
@@ -15,7 +15,7 @@
          },
          {
             "id": 2,
-            "decade": "1960s",
+            "decade": 1960,
             "name": "250 GTO",
             "desc": "Lorem ipsum",
             "top": 350,
@@ -24,7 +24,7 @@
          },
          {
             "id": 3,
-            "decade": "1970s",
+            "decade": 1970,
             "name": "308 GTB",
             "desc": "Lorem ipsum",
             "top": 350,
@@ -33,7 +33,7 @@
          },
          {
             "id": 4,
-            "decade": "1980s",
+            "decade": 1980,
             "name": "F40",
             "desc": "Lorem ipsum",
             "top": 350,
@@ -42,7 +42,7 @@
          },
          {
             "id": 5,
-            "decade": "1990s",
+            "decade": 1990,
             "name": "F355",
             "desc": "Lorem ipsum",
             "top": 350,
@@ -51,7 +51,7 @@
          },
          {
             "id": 6,
-            "decade": "2000s",
+            "decade": 2000,
             "name": "Enzo",
             "desc": "Lorem ipsum",
             "top": 350,
@@ -60,7 +60,7 @@
          },
          {
             "id": 7,
-            "decade": "2010s",
+            "decade": 2010,
             "name": "LaFerrari",
             "desc": "Lorem ipsum",
             "top": 350,
@@ -73,385 +73,30 @@
       "id": 2,
       "name": "Porsche",
       "color": "#E0DBD1",
-      "cars": [
-         {
-            "id": 1,
-            "decade": "1950s",
-            "name": "250 Testa Rossa",
-            "img": "url(src/assets/ferrari/1950s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 2,
-            "decade": "1960s",
-            "name": "250 GTO",
-            "img": "url(src/assets/ferrari/1960s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 3,
-            "decade": "1970s",
-            "name": "308 GTB",
-            "img": "url(src/assets/ferrari/1970s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 4,
-            "decade": "1980s",
-            "name": "F40",
-            "img": "url(src/assets/ferrari/1980s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 5,
-            "decade": "1990s",
-            "name": "F355",
-            "img": "url(src/assets/ferrari/1990s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 6,
-            "decade": "2000s",
-            "name": "Enzo",
-            "img": "url(src/assets/ferrari/2000s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 7,
-            "decade": "2010s",
-            "name": "LaFerrari",
-            "img": "url(src/assets/ferrari/2010s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         }
-      ]
+      "cars": []
    },
    {
       "id": 3,
       "name": "Lamborghini",
       "color": "#040404",
-      "cars": [
-         {
-            "id": 1,
-            "decade": "1950s",
-            "name": "250 Testa Rossa",
-            "img": "url(src/assets/ferrari/1950s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 2,
-            "decade": "1960s",
-            "name": "250 GTO",
-            "img": "url(src/assets/ferrari/1960s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 3,
-            "decade": "1970s",
-            "name": "308 GTB",
-            "img": "url(src/assets/ferrari/1970s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 4,
-            "decade": "1980s",
-            "name": "F40",
-            "img": "url(src/assets/ferrari/1980s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 5,
-            "decade": "1990s",
-            "name": "F355",
-            "img": "url(src/assets/ferrari/1990s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 6,
-            "decade": "2000s",
-            "name": "Enzo",
-            "img": "url(src/assets/ferrari/2000s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 7,
-            "decade": "2010s",
-            "name": "LaFerrari",
-            "img": "url(src/assets/ferrari/2010s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         }
-      ]
+      "cars": []
    },
    {
       "id": 4,
       "name": "Volvo",
       "color": "#182871",
-      "cars": [
-         {
-            "id": 1,
-            "decade": "1950s",
-            "name": "250 Testa Rossa",
-            "img": "url(src/assets/ferrari/1950s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 2,
-            "decade": "1960s",
-            "name": "250 GTO",
-            "img": "url(src/assets/ferrari/1960s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 3,
-            "decade": "1970s",
-            "name": "308 GTB",
-            "img": "url(src/assets/ferrari/1970s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 4,
-            "decade": "1980s",
-            "name": "F40",
-            "img": "url(src/assets/ferrari/1980s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 5,
-            "decade": "1990s",
-            "name": "F355",
-            "img": "url(src/assets/ferrari/1990s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 6,
-            "decade": "2000s",
-            "name": "Enzo",
-            "img": "url(src/assets/ferrari/2000s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 7,
-            "decade": "2010s",
-            "name": "LaFerrari",
-            "img": "url(src/assets/ferrari/2010s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         }
-      ]
+      "cars": []
    },
    {
       "id": 5,
       "name": "McLaren",
       "color": "#FF8700",
-      "cars": [
-         {
-            "id": 1,
-            "decade": "1950s",
-            "name": "250 Testa Rossa",
-            "img": "url(src/assets/ferrari/1950s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 2,
-            "decade": "1960s",
-            "name": "250 GTO",
-            "img": "url(src/assets/ferrari/1960s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 3,
-            "decade": "1970s",
-            "name": "308 GTB",
-            "img": "url(src/assets/ferrari/1970s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 4,
-            "decade": "1980s",
-            "name": "F40",
-            "img": "url(src/assets/ferrari/1980s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 5,
-            "decade": "1990s",
-            "name": "F355",
-            "img": "url(src/assets/ferrari/1990s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 6,
-            "decade": "2000s",
-            "name": "Enzo",
-            "img": "url(src/assets/ferrari/2000s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 7,
-            "decade": "2010s",
-            "name": "LaFerrari",
-            "img": "url(src/assets/ferrari/2010s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         }
-      ]
+      "cars": []
    },
    {
       "id": 6,
       "name": "Renault",
       "color": "#FFC128",
-      "cars": [
-         {
-            "id": 1,
-            "decade": "1950s",
-            "name": "250 Testa Rossa",
-            "img": "url(src/assets/ferrari/1950s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 2,
-            "decade": "1960s",
-            "name": "250 GTO",
-            "img": "url(src/assets/ferrari/1960s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 3,
-            "decade": "1970s",
-            "name": "308 GTB",
-            "img": "url(src/assets/ferrari/1970s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 4,
-            "decade": "1980s",
-            "name": "F40",
-            "img": "url(src/assets/ferrari/1980s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 5,
-            "decade": "1990s",
-            "name": "F355",
-            "img": "url(src/assets/ferrari/1990s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 6,
-            "decade": "2000s",
-            "name": "Enzo",
-            "img": "url(src/assets/ferrari/2000s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         },
-         {
-            "id": 7,
-            "decade": "2010s",
-            "name": "LaFerrari",
-            "img": "url(src/assets/ferrari/2010s.jpg)",
-            "desc": "Lorem ipsum",
-            "top": 350,
-            "hp": 530,
-            "acc": 5.4
-         }
-      ]
+      "cars": []
    }
 ]
