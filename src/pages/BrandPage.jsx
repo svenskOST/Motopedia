@@ -25,9 +25,9 @@ function BrandPage({ name, color, cars, assets }) {
                decade={car.decade}
                name={car.name}
                desc={car.desc}
-               top={car.top}
                hp={car.hp}
                acc={car.acc}
+               top={car.top}
             />
          ))}
       </div>
