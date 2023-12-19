@@ -8,7 +8,7 @@ function Car({ img, sound, decade, name, desc, top, hp, acc }) {
 
    return (
       <section
-         className='flex h-screen w-screen justify-center bg-cover bg-fixed bg-center bg-no-repeat'
+         className='flex h-screen w-screen justify-center bg-contain sm:bg-cover bg-fixed bg-center bg-no-repeat'
          style={{
             backgroundImage:
                'url(' + img + ')',
@@ -26,9 +26,9 @@ function Car({ img, sound, decade, name, desc, top, hp, acc }) {
 }
 
 Car.propTypes = {
-   img: PropTypes.object,
-   sound: PropTypes.object,
-   decade: PropTypes.string,
+   img: PropTypes.string,
+   sound: PropTypes.string,
+   decade: PropTypes.number,
    name: PropTypes.string,
    desc: PropTypes.string,
    top: PropTypes.number,

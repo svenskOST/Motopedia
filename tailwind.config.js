@@ -6,6 +6,9 @@ export default {
         screens: {
            xs: '440px',
         },
+        dropShadow: {
+         lg: '0 5px 5px rgba(0, 0, 0, 0.5)'
+        }
      },
      fontFamily: {
         sans: ['Poppins'],

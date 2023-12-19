@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import BrandItem from '../components/home/BrandItem.jsx'
+import BrandItem from '../components/BrandItem.jsx'
 
 function Home({ data }) {
    useEffect(() => {
@@ -10,6 +10,7 @@ function Home({ data }) {
       var icon = document.querySelector('link[rel="icon"]')
       var newIcon = document.createElement('link')
       newIcon.rel = 'icon'
+      //ta bort /src för prodd
       newIcon.href = './src/assets/favicon.ico'
       document.head.removeChild(icon)
       document.head.appendChild(newIcon)

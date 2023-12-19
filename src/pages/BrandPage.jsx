@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import Car from '../components/brandPage/Car.jsx'
+import Car from '../components/Car.jsx'
 
 function BrandPage({ name, color, cars, assets }) {
    useEffect(() => {
@@ -10,13 +10,13 @@ function BrandPage({ name, color, cars, assets }) {
       var icon = document.querySelector('link[rel="icon"]')
       var newIcon = document.createElement('link')
       newIcon.rel = 'icon'
-      newIcon.href = assets.favicon.default
+      newIcon.href = assets.favicon
       document.head.removeChild(icon)
       document.head.appendChild(newIcon)
    })
 
    return (
-      <>
+      <div style={{ backgroundColor: color }}>
          {cars.map((car) => (
             <Car
                key={car.id}
@@ -30,7 +30,7 @@ function BrandPage({ name, color, cars, assets }) {
                acc={car.acc}
             />
          ))}
-      </>
+      </div>
    )
 }
 
