@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types'
-import { useState } from 'react'
+//import { useState } from 'react'
 import { Waypoint } from 'react-waypoint'
 
 function Car({ img, sound, decade, name, desc, hp, acc, top }) {
-   const [infoActive, setInfoActive] = useState(false)
-   const [specsActive, setSpecsActive] = useState(false)
+   //const [infoActive, setInfoActive] = useState(false)
+   //const [specsActive, setSpecsActive] = useState(false)
 
    function handleInfoEnter() {
-      //var audio = document.getElementById(decade)
-      //audio.play()
-      setInfoActive(true)
+      var audio = document.getElementById(decade)
+      audio.play()
+      //setInfoActive(true)
    }
 
    function handleInfoLeave() {
-      //var audio = document.getElementById(decade)
-      //audio.pause()
-      setInfoActive(false)
+      var audio = document.getElementById(decade)
+      audio.pause()
+      //setInfoActive(false)
    }
 
+   /*
    function handleSpecsEnter() {
       setSpecsActive(true)
    }
@@ -25,10 +26,11 @@ function Car({ img, sound, decade, name, desc, hp, acc, top }) {
    function handleSpecsLeave() {
       setSpecsActive(false)
    }
+   */
 
    return (
       <section
-         className='flex h-screen w-screen justify-center bg-contain bg-fixed bg-center bg-no-repeat sm:bg-cover'
+         className='h-screen w-screen bg-contain bg-fixed bg-center bg-no-repeat sm:h-[200vh] lg:bg-cover'
          style={{
             backgroundImage: 'url(' + img + ')',
          }}
@@ -36,33 +38,9 @@ function Car({ img, sound, decade, name, desc, hp, acc, top }) {
          <Waypoint
             onEnter={handleInfoEnter}
             onLeave={handleInfoLeave}
-            topOffset={'30%'}
-            bottomOffset={'30%'}
+            topOffset={'-140%'}
+            bottomOffset={'50%'}
          />
-         <Waypoint
-            onEnter={handleSpecsEnter}
-            onLeave={handleSpecsLeave}
-            topOffset={'30%'}
-            bottomOffset={'30%'}
-         />
-         <div
-            className={`mt-16 text-center text-white transition-opacity duration-1000 [&>*]:mb-4 ${
-               infoActive ? 'opacity-100' : 'opacity-0'
-            }`}
-         >
-            <h2 className='text-2xl'>{decade}</h2>
-            <h1 className='text-3xl'>{name}</h1>
-            <p className='text-xl'>{desc}</p>
-         </div>
-         <div
-            className={`bottom-0 absolute flex justify-between w-1/2 transition-opacity duration-1000 ${
-               specsActive ? 'opacity-100' : 'opacity-0'
-            }`}
-         >
-            <div>{hp}</div>
-            <div>{acc}</div>
-            <div>{top}</div>
-         </div>
          <audio id={decade} src={sound}></audio>
       </section>
    )
