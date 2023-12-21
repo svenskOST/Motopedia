@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Car from '../components/Car.jsx'
 
 function BrandPage({ name, color, cars, assets }) {
-   useEffect(() => {
+   useEffect(function () {
       var root = document.querySelector(':root')
       root.style.setProperty('--scrollbar-color', color)
       document.title = 'Motopedia - ' + name
@@ -17,19 +17,21 @@ function BrandPage({ name, color, cars, assets }) {
 
    return (
       <div style={{ backgroundColor: color }}>
-         {cars.map((car) => (
-            <Car
-               key={car.id}
-               img={assets.images[car.id - 1]}
-               sound={assets.sounds[car.id - 1]}
-               decade={car.decade}
-               name={car.name}
-               desc={car.desc}
-               hp={car.hp}
-               acc={car.acc}
-               top={car.top}
-            />
-         ))}
+         {cars.map(function (car) {
+            return (
+               <Car
+                  key={car.id}
+                  img={assets.images[car.id - 1]}
+                  sound={assets.sounds[car.id - 1]}
+                  decade={car.decade}
+                  name={car.name}
+                  desc={car.desc}
+                  hp={car.hp}
+                  acc={car.acc}
+                  top={car.top}
+               />
+            )
+         })}
       </div>
    )
 }

@@ -55,7 +55,7 @@ function Car({ img, sound, decade, name, desc, hp, acc, top }) {
             <p className='text-xl'>{desc}</p>
          </div>
          <div
-            className={`bottom-0 absolute flex justify-between w-1/2 transition-opacity duration-1000 ${
+            className={`absolute bottom-0 flex w-1/2 justify-between transition-opacity duration-1000 ${
                specsActive ? 'opacity-100' : 'opacity-0'
             }`}
          >

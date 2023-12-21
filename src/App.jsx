@@ -11,7 +11,7 @@ function App() {
    const [data, setData] = useState([])
    const [isLoaded, setIsLoaded] = useState(false)
 
-   useEffect(() => {
+   useEffect(function () {
       async function fetchData() {
          const response = await dataPromise()
          setData(response)
@@ -35,23 +35,25 @@ function App() {
          {isLoaded && data ? (
             <Routes>
                <Route path='/' element={<Home data={data} />}></Route>
-               {data.map((page) => (
-                  <Route
-                     key={page.id}
-                     path={'/' + page.name}
-                     element={
-                        <>
-                           <Navbar />
-                           <BrandPage
-                              name={page.name}
-                              color={page.color}
-                              cars={page.cars}
-                              assets={page.assets}
-                           />
-                        </>
-                     }
-                  ></Route>
-               ))}
+               {data.map(function (page) {
+                  return (
+                     <Route
+                        key={page.id}
+                        path={'/' + page.name}
+                        element={
+                           <>
+                              <Navbar />
+                              <BrandPage
+                                 name={page.name}
+                                 color={page.color}
+                                 cars={page.cars}
+                                 assets={page.assets}
+                              />
+                           </>
+                        }
+                     ></Route>
+                  )
+               })}
             </Routes>
          ) : (
             <LoadingScreen />
