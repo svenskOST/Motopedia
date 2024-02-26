@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
    <React.StrictMode>
-      {/* aw/Alexander/task-tracker */}
+      {/* ändra basename inför produktion, t.ex. '/aw/arskurs-3/motopedia' */}
       <BrowserRouter basename=''>
          <App />
       </BrowserRouter>
